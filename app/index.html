@@ -1,11 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>403 Forbidden</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        /* CSS untuk Sidebar */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #6bc4d8;
+            height: 100vh;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .sidebar .profile img {
+            width: 50px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 20px 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        /* CSS untuk Konten Utama */
+        .main-content {
+            width: 80%;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .main-content h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .dashboard-cards {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: #a07676;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            max-width: 150px;
+        }
+
+        .card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        /* CSS untuk Tombol dan Alert */
+        .actions {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .alert {
+            background-color: #ff4f4f;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .add-product {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            flex: 1;
+        }
+
+        .add-product button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-
-<p>Directory access is forbidden.</p>
-
+    <div class="sidebar">
+        <div class="profile">
+            <img src="adminn.png" alt="Profile Icon">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Produk</a></li>
+            <li><a href="#">Pembelian</a></li>
+            <li><a href="#">Pelanggan</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Admin Dashboard</h1>
+        <div class="dashboard-cards">
+            <div class="card">
+                <img src="pesan.png" alt="Pesanan Masuk">
+                <p>Pesanan Masuk</p>
+            </div>
+            <div class="card">
+                <img src="stock.jpeg" alt="Stok">
+                <p>Stok</p>
+            </div>
+            <div class="card">
+                <img src="notif.png" alt="Notifikasi">
+                <p>Notifikasi (90)</p>
+            </div>
+            <div class="card">
+                <img src="pending.png" alt="Order Pending">
+                <p>Order Pending</p>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="alert">
+                <p>⚠️ Masalah penting yang harus diperbaiki</p>
+            </div>
+            <div class="add-product">
+                <button>+ Tambah Produk</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
