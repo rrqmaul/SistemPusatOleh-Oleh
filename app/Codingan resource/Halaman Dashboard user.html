@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            background-color: #2196F3;
+            color: white;
+            width: 200px;
+            padding: 20px;
+        }
+
+        .sidebar h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .sidebar li a:hover {
+            background-color: #1976D2;
+        }
+
+        .content {
+            background-color: #f4f4f4;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .content h2 {
+            margin-bottom: 20px;
+        }
+
+        .customer-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .customer-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: calc(33.33% - 20px);
+        }
+
+        
+
+        .customer-card h3 {
+            margin: 10px 0;
+        }
+
+        .customer-card p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Admin Panel</h1>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Reports</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Customer List</h2>
+            <div class="customer-list">
+                <div class="customer-card">
+                    <img src="customer1.jpg" alt="Customer 1">
+                    <h3>Customer 1</h3>
+                    <p>Email: customer1@example.com</p>
+                </div>
+                <div class="customer-card">
+                    <img src="customer2.jpg" alt="Customer 2">
+                    <h3>Customer 2</h3>
+                    <p>Email: customer2@example.com</p>
+                </div>
+                <div class="customer-card">
+                    <img src="customer3.jpg" alt="Customer 3">
+                    <h3>Customer 3</h3>
+                    <p>Email: customer3@example.com</p>
+                </div>
+                <!-- Add more customer cards as needed -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
