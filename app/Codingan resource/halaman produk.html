@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Oleh-Oleh Nusantara</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            margin-top: 0;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+
+        .product-item {
+            text-align: center;
+ background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            transition: transform 0.2s;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-item h3 {
+            margin: 10px 0;
+        }
+
+        .product-item p {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pusat Oleh-Oleh Nusantara</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Selamat Datang di Pusat Oleh-Oleh Nusantara</h2>
+            <p>Temukan berbagai oleh-oleh khas dari seluruh Indonesia.</p>
+        </section>
+        <section id="products">
+            <h2>Produk Kami</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="produk1.jpg" alt="Produk 1">
+                    <h3>Produk 1</h3>
+                    <p>Deskripsi singkat produk 1.</p>
+                </div>
+                <div class="product-item">
+                    <img src="produk2.jpg" alt="Produk 2">
+                    <h3>Produk 2</h3>
+                    <p>Deskripsi singkat produk 2.</p>
+                </div>
+                <div class="product-item">
+                    <img src="produk3.jpg" alt="Produk 3">
+                    <h3>Produk 3</h3>
+                    <p>Deskripsi singkat produk 3.</p>
+                </div>
+                <div class="product-item">
+                    <img src="produk4.jpg" alt="Produk 4">
+                    <h3>Produk 4</h3>
+                    <p>Deskripsi singkat produk 4.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>Tentang Kami</h2>
+            <p>Kami adalah penyedia oleh-oleh terbaik dari seluruh Indonesia, dengan kualitas terjamin dan harga bersaing.</p>
+        </section>
+        <section id="contact">
+            <h2>Hubungi Kami</h2>
+            <p>Untuk pertanyaan lebih lanjut, silakan hubungi kami di email: info@oleholeh.com</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Pusat Oleh-Oleh Nusantara. All rights reserved.</p>
+    </footer>
+</body>
+</html>
