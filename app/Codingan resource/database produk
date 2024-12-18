@@ -1,0 +1,21 @@
+//Di push by Igo
+-- Membuat Database
+CREATE DATABASE penjualan_oleh_oleh;
+
+-- Menggunakan Database
+USE penjualan_oleh_oleh;
+
+-- Membuat Tabel Produk
+CREATE TABLE produk (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama_produk VARCHAR(100) NOT NULL,
+    deskripsi TEXT,
+    harga DECIMAL(10, 2) NOT NULL,
+    stok INT NOT NULL,
+    tanggal_ditambahkan TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Menambahkan Data Contoh ke Tabel Produk
+INSERT INTO produk (nama_produk, deskripsi, harga, stok) VALUES
+('Kue Kering', 'Kue kering lezat dan renyah', 50000.00, 100),
+('Coklat Spesial', 'Coklat dengan berbagai rasa', 75000.00, 50);
