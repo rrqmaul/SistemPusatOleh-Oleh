@@ -1,0 +1,21 @@
+// Di push by Hasan
+-- Membuat Database
+CREATE DATABASE penjualan_oleh_oleh;
+
+-- Menggunakan Database
+USE penjualan_oleh_oleh;
+
+-- Membuat Tabel Pelanggan
+CREATE TABLE pelanggan (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    telepon VARCHAR(15),
+    alamat TEXT,
+    tanggal_daftar TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Menambahkan Data Contoh ke Tabel Pelanggan
+INSERT INTO pelanggan (nama, email, telepon, alamat) VALUES
+('John Doe', 'john@example.com', '08123456789', 'Jl. Contoh No. 1'),
+('Jane Smith', 'jane@example.com', '08198765432', 'Jl. Contoh No. 2');
